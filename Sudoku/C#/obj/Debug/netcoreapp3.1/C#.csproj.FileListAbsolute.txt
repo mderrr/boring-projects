@@ -1,0 +1,13 @@
+C:\Users\herna\Desktop\sudoku\C#\bin\Debug\netcoreapp3.1\C#.exe
+C:\Users\herna\Desktop\sudoku\C#\bin\Debug\netcoreapp3.1\C#.deps.json
+C:\Users\herna\Desktop\sudoku\C#\bin\Debug\netcoreapp3.1\C#.runtimeconfig.json
+C:\Users\herna\Desktop\sudoku\C#\bin\Debug\netcoreapp3.1\C#.runtimeconfig.dev.json
+C:\Users\herna\Desktop\sudoku\C#\bin\Debug\netcoreapp3.1\C#.dll
+C:\Users\herna\Desktop\sudoku\C#\bin\Debug\netcoreapp3.1\C#.pdb
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.csprojAssemblyReference.cache
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.AssemblyInfoInputs.cache
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.AssemblyInfo.cs
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.csproj.CoreCompileInputs.cache
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.dll
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.pdb
+C:\Users\herna\Desktop\sudoku\C#\obj\Debug\netcoreapp3.1\C#.genruntimeconfig.cache
