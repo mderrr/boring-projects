@@ -1,24 +1,26 @@
 import secrets
+from prime import getModulusAndBase
 
 #number = secrets.randbits(256)#secrets.SystemRandom().randint(0,2131231312)
 
-#print(number)
 
-p = 23
-g = 5
+p, g = getModulusAndBase(128)
 
-alice = secrets.SystemRandom().randint(0, 9)
-bob = secrets.SystemRandom().randint(0, 9)
+alices_private_component = secrets.randbits(16)
+bobs_private_component = secrets.randbits(16)
 
-A = (g ** alice) % p
-B = (g ** bob) % p
+alices_public_component = (g ** alices_private_component) % p
+bobs_public_component = (g ** bobs_private_component) % p
 
 
-print(A)
-print(B)
+print("Alice's public component:", alices_public_component)
+print("Bob's public component:", bobs_public_component)
 
-alice_s = (B ** alice) % p
-bob_s = (A ** bob) % p
+alice = (bobs_public_component ** alices_private_component) % p
+bob = (alices_public_component ** bobs_private_component) % p
 
-print(alice_s)
-print(bob_s)
+print("Alice's secret:", alice)
+print("Bob's secret:", bob)
+
+if (alice == bob):
+    print("Both are equal")
