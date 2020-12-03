@@ -1,0 +1,13 @@
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\bin\release\netcoreapp3.1\Public Key Criptography.exe
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\bin\release\netcoreapp3.1\Public Key Criptography.deps.json
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\bin\release\netcoreapp3.1\Public Key Criptography.runtimeconfig.json
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\bin\release\netcoreapp3.1\Public Key Criptography.runtimeconfig.dev.json
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\bin\release\netcoreapp3.1\Public Key Criptography.dll
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\bin\release\netcoreapp3.1\Public Key Criptography.pdb
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.csprojAssemblyReference.cache
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.AssemblyInfoInputs.cache
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.AssemblyInfo.cs
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.csproj.CoreCompileInputs.cache
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.dll
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.pdb
+D:\repositories\boring-projects\Cryptography\Public Key Cryptography\Public Key Criptography\obj\release\netcoreapp3.1\Public Key Criptography.genruntimeconfig.cache

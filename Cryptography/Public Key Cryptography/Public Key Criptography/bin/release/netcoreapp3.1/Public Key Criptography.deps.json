@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Public Key Criptography/1.0.0": {
+        "runtime": {
+          "Public Key Criptography.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Public Key Criptography/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
