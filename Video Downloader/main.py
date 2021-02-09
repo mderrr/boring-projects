@@ -54,8 +54,16 @@ UPPER_CASE_YES = "Y"
 UPPER_CASE_NO = "N"
 CLEAR = "clear"
 
+WINDOWS_OS_NAME = "nt"
+LINUX_OS_NAME = "posix"
+WIN_CLEAR = "cls"
+LINUX_CLEAR = "clear"
+
 def clear():
-    os.system(CLEAR)
+    if (os.name == WINDOWS_OS_NAME):
+        os.system(WIN_CLEAR)
+    elif (os.name == LINUX_OS_NAME):
+        os.system(LINUX_CLEAR)
 
 def show_error_message(message):
     input(ERROR_MESSAGE.format(message))
