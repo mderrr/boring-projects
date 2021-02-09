@@ -1,12 +1,60 @@
-import secrets
-from functions import measureTime
-from os import system
+import secrets, time, os
+
+MODULUS_AND_BASE_MESSAGE = "Modulus: {}, Base {}."
+ELAPSED_TIME_MESSAGE = "The function {} took {}{} to run."
+
+GETTING_SAFE_PRIME_INFO = "Getting safe prime..."
+
+PRIME_SAVE_PATH = "./Prime/prime.txt"
+RELATIVE_SAVE_PATH = "./prime.txt"
+
+MILLISECONDS = "ms"
+SECONDS = "s"
+MINUTES = "min"
+
+WINDOWS_OS_NAME = "nt"
+LINUX_OS_NAME = "posix"
+WIN_CLEAR = "cls"
+LINUX_CLEAR = "clear"
+
+FILE_MODE = "w"
 
 REFERENCE_PRIME_LIST = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199]
 
+def clear():
+    if (os.name == WINDOWS_OS_NAME):
+        os.system(WIN_CLEAR)
+    elif (os.name == LINUX_OS_NAME):
+        os.system(LINUX_CLEAR)
+
+def measureTime(function):
+    def inner(*args, **kwargs):
+        starting_time = time.time()
+        to_execute = function(*args, **kwargs)
+        ending_time = time.time()
+        elapsed_time = ending_time - starting_time
+
+        if (elapsed_time > 60):
+            elapsed_time /= 60
+            time_unit = MINUTES
+
+        elif (elapsed_time < 1):
+            elapsed_time *= 1000
+            time_unit = MILLISECONDS
+
+        else:
+            time_unit = SECONDS
+
+        clear()
+        print(ELAPSED_TIME_MESSAGE.format(function.__name__, round(elapsed_time), time_unit))
+
+        return to_execute
+    
+    return inner
+
 def inform(message):
-    system("cls")
-    print(message + "...")
+    clear()
+    print(message)
 
 def getNumberOfBits(number):
     number_in_binary = bin(number)
@@ -78,7 +126,7 @@ def getPrimeNumber(bits):
             return prime_cadidate       
 
 def getSophieGermainSafePrime(bits):
-    inform("Getting safe prime")
+    inform(GETTING_SAFE_PRIME_INFO)
 
     while True:
         safe_prime = getPrimeNumber(bits)
@@ -106,12 +154,15 @@ def getModulusAndBase(bits):
     safe_prime = getSophieGermainSafePrime(bits)
     primitive_root = getFirstPrimitiveRoot(safe_prime)
 
-    with open("prime.txt", "a") as text_file:
+    with open(PRIME_SAVE_PATH, FILE_MODE) as text_file:
         text_file.write(str(safe_prime))
 
     return safe_prime, primitive_root  
   
 if __name__ == '__main__': 
+    PRIME_SAVE_PATH = RELATIVE_SAVE_PATH
+
     # For a resonable performance max 256bit number.
-    modulus, base = getModulusAndBase(128)
-    print("Modulus: {}, Base {}.".format(modulus, base))
+    modulus, base = getModulusAndBase(512)
+
+    print(MODULUS_AND_BASE_MESSAGE.format(modulus, base))
