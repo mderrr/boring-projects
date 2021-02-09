@@ -1,6 +1,7 @@
 # Description
 Windows Sudoku solver.
 
+
 ## Required Packages
 - pyautogui
 - pynput
