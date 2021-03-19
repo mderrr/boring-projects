@@ -6,7 +6,7 @@ ELAPSED_TIME_MESSAGE = "The function {} took {}{} to run."
 GETTING_SAFE_PRIME_INFO = "Getting safe prime..."
 
 PRIME_SAVE_PATH = "./Prime/prime.txt"
-RELATIVE_SAVE_PATH = "./prime.txt"
+RELATIVE_SAVE_PATH = "./Cryptography/Public Key Cryptography/Python/Prime/prime.txt"
 
 MILLISECONDS = "ms"
 SECONDS = "s"
@@ -163,6 +163,6 @@ if __name__ == '__main__':
     PRIME_SAVE_PATH = RELATIVE_SAVE_PATH
 
     # For a resonable performance max 256bit number.
-    modulus, base = getModulusAndBase(512)
+    modulus, base = getModulusAndBase(128)
 
     print(MODULUS_AND_BASE_MESSAGE.format(modulus, base))
