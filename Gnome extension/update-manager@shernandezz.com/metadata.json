@@ -1,0 +1,10 @@
+{
+    "name" : "Arch Update Manager",
+    "description" : "an Arch-linux update manager",
+    "shell-version" : [
+        "3.36"
+    ],
+    "url" : "",
+    "uuid" : "update-manager@shernandezz.com",
+    "version" : 1.0
+}
