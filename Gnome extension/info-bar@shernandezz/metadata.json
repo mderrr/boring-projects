@@ -1,0 +1,9 @@
+{
+  "name": "Info Bar",
+  "description": "a Custom information bar",
+  "uuid": "info-bar@shernandezz",
+  "shell-version": [
+    "40"
+  ],
+  "version" : 1.0
+}

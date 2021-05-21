@@ -16,6 +16,22 @@
 	icon-size: 16px;
 }
 
-.label {
-	color: #fe8019;
+.uname {
+	color: #83a598;
+}
+
+.cpu {
+	color: #8ec07c;
+}
+
+.mem {
+	color: #b8bb26;
+}
+
+.network {
+	color: #fabd2f;
+}
+
+.date {
+	color: #fb4934;
 }
